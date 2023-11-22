@@ -18,7 +18,7 @@ if ($query) {
         $_SESSION['username'] = $entered_username;
 
         // Redirect ke halaman dashboard atau halaman lain yang sesuai
-        header("Location: home.php");
+        header("Location: index.php");
         exit();
     } else {
         // Kredensial salah, mungkin tampilkan pesan kesalahan atau redirect kembali ke halaman login

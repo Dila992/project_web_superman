@@ -7,7 +7,7 @@ $entered_username = $_POST['username'];
 $entered_password = $_POST['password'];
 
 $sql = "SELECT * FROM user WHERE username = '$entered_username' AND password = '$entered_password'";
-$query = mysqli_query($koneksi, $sql);
+$query = mysqli_query($conn, $sql);
 
 if ($query) {
     // Periksa jumlah baris hasil query

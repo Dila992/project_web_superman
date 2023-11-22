@@ -5,7 +5,7 @@ $nama = $_POST['first_name'] . $_POST['last_name'];
 $email = $_POST['email'];
 $password =$_POST['password'];
 $insert ="INSERT INTO user (nama,password,email) VALUES ('$nama','$password','$email')";
-if(mysqli_query($koneksi, $insert)){
+if(mysqli_query($conn, $insert)){
     // Jika berhasil disisipkan, tampilkan pesan sukses
     echo "<script>alert('Registrasi Berhasil!');document.location('login.php')</script>";
 } else {

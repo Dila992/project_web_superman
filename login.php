@@ -3,10 +3,10 @@ session_start();
 
 include "koneksi.php";
 if(isset($_POST['submit'])){
-$entered_username = $_POST['username'];
+$entered_username = $_POST['email'];
 $entered_password = $_POST['password'];
 
-$sql = "SELECT * FROM user WHERE username = '$entered_username' AND password = '$entered_password'";
+$sql = "SELECT * FROM user WHERE email = '$entered_email' AND password = '$entered_password'";
 $query = mysqli_query($conn, $sql);
 
 if ($query) {
@@ -15,14 +15,14 @@ if ($query) {
 
     if ($jumlah_baris == 1) {
         // Kredensial benar, inisialisasi sesi
-        $_SESSION['username'] = $entered_username;
+        $_SESSION['username'] = $entered_email;
 
         // Redirect ke halaman dashboard atau halaman lain yang sesuai
         header("Location: index.php");
         exit();
     } else {
         // Kredensial salah, mungkin tampilkan pesan kesalahan atau redirect kembali ke halaman login
-        echo "alert(Kombinasi username dan password salah)";
+        echo "alert(Kombinasi email dan password salah)";
     exit();
     }
 }

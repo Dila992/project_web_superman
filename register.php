@@ -25,6 +25,6 @@ mysqli_close($koneksi);
     <title>Register</title>
 </head>
 <body>
-    <!-- Front End Di Sini -->
+    <!-- Form untuk register di sini -->
 </body>
 </html>

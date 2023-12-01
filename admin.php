@@ -80,6 +80,13 @@ include 'koneksi.php';
 $sql = "SELECT * FROM admin";
 $query = mysqli_query($conn,$sql);
 $hasil = mysqli_fetch_array($query);
+echo '<table border="1">
+        <tr>
+            <th>ID User</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Action</th>
+        </tr>';
 
 if(!empty($hasil['id_admin'])){ 
     echo "

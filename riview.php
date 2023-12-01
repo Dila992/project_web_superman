@@ -32,7 +32,7 @@
         <div class="back"><img src="superman/filmBatman-VS-Superman-2016-Copy.jpg" alt=""></div>
         <div class="rating">
             <div class="rat">
-                <h2>BATMAN V SUPERMAN</h2>
+                <h2>BATMAN VS SUPERMAN</h2>
                 <h2>151 menit | <img src="superman/image 18.png" alt=""></h2>
                 <P><ul>
                     <li>Tahun Rilis: 2016</li>

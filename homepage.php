@@ -32,8 +32,8 @@
     <div class="logdanbut">
         <div class="text"><img src="superman/Welcome to the Superman Website.png" alt=""></div>
         <div class="button">
-            <a href="login">login</a>
-            <a href="">Register</a>
+            <a href="login.php">login</a>
+            <a href="register.php">Register</a>
         </div>
     </div>
     <div class="image">

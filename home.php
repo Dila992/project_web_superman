@@ -1,3 +1,25 @@
+<?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: homepage.php");
+    exit();
+}
+?>
+
+<?php 
+include 'koneksi.php';
+$query = "SELECT * FROM film";
+$sql = mysqli_query($conn, $query);
+$hasil = mysqli_fetch_array($sql);
+while ($hasil['id_film'] != 0) {
+    $id_film = $hasil['id_film'];
+    $judul = $hasil['judul'];
+    $link_nonton = $hasil['link_nonton'];
+    $gambar = $hasil['gambar'];
+}
+
+;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

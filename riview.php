@@ -27,7 +27,21 @@
             <div></div>
         </label>
 </header>
-
+<?php 
+include 'koneksi.php';
+$query = "SELECT * FROM detail_film";
+$sql = mysqli_query($conn, $query);
+$hasil = mysqli_fetch_array($sql);
+while ($hasil['id_detail'] != 0) {
+    $judul = $_POST['judul'];
+    $link_nonton = $_POST['link_nonton'];
+    $tahun_rilis = $_POST['tahun_rilis'];
+    $genre = $_POST['genre'];
+    $sutradara = $_POST['sutradara'];
+    $pemeran = $_POST['pemeran'];
+    $perusahaan_produksi = $_POST['perusahaan_produksi'];
+    $id_film = $_POST['id_film'];
+} ?>
     <div class="content">
         <div class="back"><img src="superman/filmBatman-VS-Superman-2016-Copy.jpg" alt=""></div>
         <div class="rating">

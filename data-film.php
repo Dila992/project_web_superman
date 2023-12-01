@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
     // Memindahkan file ke direktori tujuan
     if (move_uploaded_file($_FILES["gambar"]["tmp_name"], $targetFilePath)) {
         // Query untuk menyimpan data ke dalam database
-        $sql = "INSERT INTO film (judul, link_nonton, gambar, waktu) VALUES ('$judul', '$link_nonton', '$targetFilePath')";
+        $sql = "INSERT INTO film (judul, link_nonton, gambar) VALUES ('$judul', '$link_nonton', '$targetFilePath')";
 
         if ($conn->query($sql) === TRUE) {
             echo "Data berhasil disimpan ke dalam database.";
